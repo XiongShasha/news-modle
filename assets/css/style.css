@@ -102,13 +102,6 @@ button:focus {
 
 	outline: 0; 
 }
-.copyrights{
-	text-indent:-9999px;
-	height:0;
-	line-height:0;
-	font-size:0;
-	overflow:hidden;
-}
 /* 2.1 - Headings 
 --------------------------------------------- */
 
@@ -224,12 +217,11 @@ h1,h2,h3,h4,h5,h6 {
 .search-field {
 	border: 1px solid #e9e9e9;
 	padding: 10px 15px;
-	width: 220px;
+	width: 85%;
 }
 .search-btn {
 	background-color: transparent;
 	color: #209b60;
-	position: absolute;
 	right: 2px;
 	top: 19px;
 }
@@ -242,22 +234,10 @@ h1,h2,h3,h4,h5,h6 {
 	z-index: 999;
 	-webkit-animation-duration: 0.45s;
 	-moz-animation-duration: 0.45s;
-	-ms-animation-duration: 0.45s;
+	/*-ms-animation-duration: 0.45s;*/
 	-o-animation-duration: 0.45s;
 	animation-duration: 0.45s;
 }
-
-/* Main Slider Section */
-/*
-.carousel-caption {
-	left: 0;
-	padding-bottom: 0px;
-	width: 100%;
-	height: 100%;
-	bottom: 5px;
-	padding-top: 10%;
-*/
-
 
 .slider-icon {
 	color: #ffffff;
@@ -319,15 +299,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* About Section */
-.about {
-	padding-top: 90px;
-}
-.about-area {
-	background: #f7f7f7;
-	border-top: 2px solid #209b60;
-	border-bottom: 2px solid #209b60;
-	position: relative;
-}
+
 .title-area {
 	top: -35px;
 	width: 330px;
@@ -335,59 +307,12 @@ h1,h2,h3,h4,h5,h6 {
 	margin-left: -175px;
 	position: absolute;
 }
-.about-title {
-	background: #f7f7f7;
-	border-top: 2px solid #209b60;
-	color: #6f7678;
-	font-size: 2.125em;
-	font-weight: 800;
-	padding-top: 15px;
-	text-transform: uppercase;
-}
-.about .title-description {
-	padding-bottom: 15px;
-	margin: 0px;
-}
-.about-items {
-	background: #f7f7f7;
-	display: inline-block;
-	padding-top: 90px;
-}
-.about-items .item {
-	padding-bottom: 60px;
-}
+
 .item-top {
 	border-top: 1px solid #d7dee0;
 	border-bottom: 1px solid #d7dee0;
 	color: #209b60;
 	padding: 15px 0px;
-}
-.about-items .item-title {
-	font-size: 1.5em;
-	font-weight: 800;
-	padding-bottom: 3px;
-	text-transform: uppercase;
-}
-.about-items .sub-title {
-	font-size: 1.25em;
-	font-weight: 300;
-}
-.about-items .item-description {
-	color: #869093;
-	font-size: .875em;
-	padding: 20px 0px 12px 0px;
-}
-.about-items .btn {
-	background-color: #209b60;
-	color: #ffffff;
-	font-size: .875em;
-	font-weight: 800;	
-	text-transform: uppercase;
-}
-.about-items .btn:hover {
-	background-color: #ffffff;
-	border-color: #209b60;
-	color: #209b60;
 }
 
 /* Portfolio Section */
@@ -552,7 +477,34 @@ h1,h2,h3,h4,h5,h6 {
 	color: #209b60;
 	font-size: .875em;
 }
+/*page*/
+.page{
+	font-size: 18px;
+	color: #209b60;
+	margin: 0 auto;
+	position: absolute;
+}
+.page .page-prev{
+	border: 1px solid #209b60;
+	padding: 8px 8px;
+}
+.page .page-current{
+	border: 1px solid #209b60;
+	padding: 7px 7px;
+	background-color: #209b60;
+	color: white;
 
+}
+.page a {
+	border: 1px solid #209b60;
+	padding:8px 8px;
+	color: #209b60;
+
+}
+.page a:hover{
+	background-color: #209b60;
+	color: white;
+}
 /* Latest post Section */
 .post-area {
 	padding-top: 60px;
@@ -883,7 +835,7 @@ h1,h2,h3,h4,h5,h6 {
 	border: 1px solid #d7dee0;
 	font-size: .875em;
 	margin-bottom: 15px;
-	padding: 10px 20px;         <br>
+	padding: 10px 20px;
 }
 .submit-btn {
 	background-color: #209b60;
@@ -897,7 +849,7 @@ h1,h2,h3,h4,h5,h6 {
 
 	-webkit-transition: all .25s ease;
 	-moz-transition: all .25s ease;
-	-ms-transition: all .25         <br>s ease;
+	-ms-transition: all .25  sease;
 	-o-transition: all .25s ease;
 	transition: all .25s ease;
 }
@@ -1097,7 +1049,7 @@ top: 0px;
 
 /* Footer Section */
 footer {
-	background-color: #209b60;
+	background-color: black;
 	color: #ffffff;
 	font-size: .875em;
 }
@@ -1156,9 +1108,6 @@ footer a {
 .tweet time:after {
 	border-right: 1px solid #ffffff;
 	right: 0px;
-}
-.copyright {
-	line-height: 95px;
 }
 
 
